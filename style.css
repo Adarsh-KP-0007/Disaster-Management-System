@@ -63,7 +63,7 @@ body {
     height: 830px;
     position: absolute;
     top: 122px;
-    background-image: url("earthquake2.jpg");
+    background-image: url("images/earthquake2.png") ;
 }
 
 .bbtn{
@@ -144,4 +144,32 @@ letter-spacing: 0.6px;
 position: relative;
 top: 10%;
 transform: translateY(15%) translateX(19%);
+}
+
+.form-box{
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.two-forms {
+    display: flex;
+}
+
+.input-field {
+    background: rgb(255, 255, 255);
+}
+
+.top {
+    color: #FFF;
+}
+
+.two-col {
+    display: flex;
 }
