@@ -11,10 +11,12 @@
     box-sizing: border-box;
 }
 
-
+html{
+    height: 800px;
+}
 body {
     margin: 0;
-    height: 800px;
+    height: 50%;
 }
 
 .btn{
@@ -57,11 +59,11 @@ body {
 }
 
 .hero-section{
-    background-image: url("earthquake2.jpg");
     width: 1920px;
-    height: 1080px;
+    height: 830px;
     position: absolute;
     top: 122px;
+    background-image: url("earthquake2.jpg");
 }
 
 .bbtn{
