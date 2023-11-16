@@ -1,0 +1,145 @@
+:root {
+    --light-vio: #635985;
+    --medium-vio: #443C68;
+    --dark-vio: #393053;
+}
+ 
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    height: 800px;
+}
+
+.btn{
+    width: 168px;
+    height: 48px;
+    border-radius: 10px;
+    background: var(--medium-vio);
+    position: relative;
+    transform: translateY(70%) translateX(20%);
+}
+
+.btn:hover{
+    background: var(--dark-vio);
+}
+
+.btn a{
+    color: #ffffff;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 20px */
+    letter-spacing: 1px;
+    position: relative;
+    top: 30%;
+    left: 12%;
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 1198px;
+    margin: 0 auto;
+}
+
+.navbar{
+    background: var(--dark-vio);
+    width: 1920px;
+    height: 122px;
+    border-bottom: 5px solid black;
+}
+
+.hero-section{
+    background-image: url("earthquake2.jpg");
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    top: 122px;
+}
+
+.bbtn{
+    height: 120px;
+    width: 550px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 27px;
+}
+
+nav .logo{
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 35px */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 20px */
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.right{
+    color: #FFF;
+    text-align: right;
+    font-family: Outfit;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 64px */
+    position: relative;
+    transform: translateY(120%);
+}
+
+.bottom-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10%;
+    transform: translateY(250%);
+}
+
+.content{
+    color: #393053;
+
+text-align: center;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 12px */
+letter-spacing: 0.6px;
+position: relative;
+top: 10%;
+transform: translateY(15%) translateX(19%);
+}
