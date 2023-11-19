@@ -24,22 +24,17 @@
                                 About
                             </a>
                         </li>
-
-                        <li>
-                            <a href="#">
-                                Register
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Login
-                            </a>
-                        </li>
                         <li>
                             <a href="#">
                                 Contact Us
                             </a>
                         </li>
+                        <li>
+                            <button class='login-button' href="#">
+                                Login
+                            </button>
+                        </li>
+                        
                     </ul>
                 </nav>
             </div>
@@ -50,63 +45,38 @@
             <div class="login-container" id="login">
                 <div class="top">
                     <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
-                    <header>Login</header>
+                    <h2>Login</h2>
                 </div>
-                <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Username or Email">
-                    <i class="bx bx-user"></i>
-                </div>
-                <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Password">
-                    <i class="bx bx-lock-alt"></i>
-                </div>
-                <div class="input-box">
-                    <input type="submit" class="submit" value="Sign In">
-                </div>
+                <input type="text" class="input-field" placeholder="Username or Email">
+                <input type="password" class="input-field" placeholder="Password">
                 <div class="two-col">
-                    <div class="one">
+                    <div class="remember">
                         <input type="checkbox" id="login-check">
                         <label for="login-check"> Remember Me</label>
                     </div>
-                    <div class="two">
-                        <label><a href="#">Forgot password?</a></label>
-                    </div>
+                    <a href="#">Forgot password?</a>
                 </div>
+                <button id="login">Login</button> 
             </div>
-            
-            <div class="register-container" id="register">
+            <div class="login-container" id="register">
                 <div class="top">
                     <span>Have an account? <a href="#" onclick="login()">Login</a></span>
-                    <header>Sign Up</header>
+                    <h2>Sign Up</h2>
                 </div>
                 <div class="two-forms">
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Firstname">
-                    </div>
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Lastname">
-                    </div>
+                    <input type="text" class="input-field" placeholder="Firstname">
+                    <input type="text" class="input-field" placeholder="Lastname">
                 </div>
-                <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Email">
-                    
-                </div>
-                <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Password">
-                   
-                </div>
-                <div class="input-box">
-                    <input type="submit" class="submit" value="Register">
-                </div>
+                <input type="text" class="input-field" placeholder="Email">
+                <input type="password" class="input-field" placeholder="Password">
                 <div class="two-col">
-                    <div class="one">
+                    <div class="remember">
                         <input type="checkbox" id="register-check">
                         <label for="register-check"> Remember Me</label>
                     </div>
-                    <div class="two">
-                        <label><a href="#">Terms & conditions</a></label>
-                    </div>
+                    <a href="#">Terms & conditions</a>
                 </div>
+                <button id="login">Register</button>  
             </div>
         </div>
     </div>

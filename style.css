@@ -16,8 +16,28 @@ html{
 }
 body {
     margin: 0;
-    height: 50%;
 }
+
+nav .login-button {
+    width: 130px;
+    height: 50px;
+    font: Roboto;
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    border: 2px solid white;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    background: #443C68;
+    transition: .5s;
+}
+
+nav .login-button:hover{
+    color: #443C68;
+    background: white;
+}
+
 
 .btn{
     width: 168px;
@@ -26,6 +46,7 @@ body {
     background: var(--medium-vio);
     position: relative;
     transform: translateY(70%) translateX(20%);
+    transition: .5s;
 }
 
 .btn:hover{
@@ -55,7 +76,7 @@ body {
     background: var(--dark-vio);
     width: 1920px;
     height: 122px;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #443C68;
 }
 
 .hero-section{
@@ -106,6 +127,7 @@ nav ul li a {
     line-height: 100%; /* 20px */
     letter-spacing: 1px;
     text-decoration: none;
+    transition: transform .5s;
 }
 
 nav ul li a:hover{
@@ -146,6 +168,8 @@ top: 10%;
 transform: translateY(15%) translateX(19%);
 }
 
+
+
 .form-box{
     min-height: 80vh;
     align-items: center;
@@ -153,23 +177,81 @@ transform: translateY(15%) translateX(19%);
     display: flex;
 }
 
-.register-container {
+
+.top h2{
+    font: Outfit;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
+    border: 5px solid #635985;
+    background: white;
+    border-radius: 20px;
+    row-gap: 10px;
 }
 
+.login-container input{
+    width: 80%;
+    background: transparent;
+    color: var(--dark-vio);
+    border: none;
+    border-bottom: 2px solid #635985;
+    outline: none;
+    height: 50px;
+    font-size: 15px;
+    font-weight: lighter;
+
+}
+.login-container input::placeholder{
+    color: var(--dark-vio);
+}
 .two-forms {
+    gap:10px;
     display: flex;
-}
-
-.input-field {
-    background: rgb(255, 255, 255);
+    flex-direction: row;
+    width: 80%;
 }
 
 .top {
-    color: #FFF;
+    color: var(--dark-vio);
+}
+
+.top a{
+    color: var(--dark-vio);
 }
 
 .two-col {
+    color: var(--dark-vio);
+    gap: 50px;
     display: flex;
+    padding-top: 15%;
+}
+
+.two-col a{
+    color: var(--dark-vio);
+}
+.remember{
+    display: flex;
+
+}
+
+.remember input{
+    height: 15px;
+}
+
+.login-container button{
+    width: 80%;
+    background: var(--dark-vio);
+    color: white;
+    border-radius: 20px;
+    height: 50px;
+    transform: translateY(50%);
 }
