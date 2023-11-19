@@ -19,6 +19,7 @@ body {
 }
 
 nav .login-button {
+    appearance: button;
     width: 130px;
     height: 50px;
     font: Roboto;
@@ -68,7 +69,7 @@ nav .login-button:hover{
 }
 
 .wrapper{
-    width: 1198px;
+    width: 62%;
     margin: 0 auto;
 }
 
