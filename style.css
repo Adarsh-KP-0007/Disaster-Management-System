@@ -49,7 +49,9 @@ nav .login-button:hover{
 }
 
 
-.btn{
+.button{
+    color: #FFF;
+    font-weight: 700;
     width: 168px;
     height: 48px;
     border-radius: 10px;
@@ -57,13 +59,15 @@ nav .login-button:hover{
     position: relative;
     transform: translateY(70%) translateX(20%);
     transition: .5s;
+    justify-content: center;
 }
 
-.btn:hover{
+.button:hover{
     background: var(--dark-vio);
 }
 
-.btn a{
+.button a{
+    align-self: center;
     color: #ffffff;
     font-family: Outfit;
     font-size: 20px;
@@ -197,8 +201,9 @@ transform: translateY(15%) translateX(19%);
 }
 
 .login-container {
-    width: 400px;
-    height: 600px;
+    padding: 50px;
+    width: max-content;
+    height: max-content;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -258,11 +263,40 @@ transform: translateY(15%) translateX(19%);
     height: 15px;
 }
 
-.login-container button{
-    width: 80%;
-    background: var(--dark-vio);
-    color: white;
+
+.register-form{
+    transform: translateX(75%) translateY(5%);
+    justify-content: center;
+    padding: 50px;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #635985;
+    background: white;
     border-radius: 20px;
-    height: 50px;
-    transform: translateY(50%);
+    row-gap: 15px;
 }
+.apply {
+    row-gap: 300px;
+    align-self: left;
+}
+
+.input-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.description textarea{
+    rows: 10;
+    height: 300%;
+    width: 100%;
+}
+
