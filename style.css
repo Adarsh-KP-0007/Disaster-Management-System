@@ -12,11 +12,20 @@
 }
 
 html{
-    height: 800px;
+    height: 100%;
 }
 body {
     margin: 0;
 }
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
 
 nav .login-button {
     appearance: button;
@@ -70,19 +79,20 @@ nav .login-button:hover{
 
 .wrapper{
     width: 62%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .navbar{
     background: var(--dark-vio);
-    width: 1920px;
+    width: 100%;
     height: 122px;
     border-bottom: 5px solid #443C68;
 }
 
 .hero-section{
-    width: 1920px;
-    height: 830px;
+    width: 100%;
+    height: 87.2%;
     position: absolute;
     top: 122px;
     background-image: url("images/earthquake2.png") ;
@@ -150,8 +160,8 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     position: relative;
-    gap: 10%;
-    transform: translateY(250%);
+    justify-content: center;
+    transform: translateY(300%);
 }
 
 .content{
