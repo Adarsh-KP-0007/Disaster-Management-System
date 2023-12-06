@@ -152,58 +152,22 @@ nav ul li a {
 nav ul li a:hover{
     text-decoration: underline;
 }
-.right{
+.right h1{
     color: #FFF;
     text-align: right;
     font-family: Outfit;
-    font-size: 5rem;
     font-style: normal;
     font-weight: 700;
-    
-    position: relative;
-    transform: translateY(120%);
-    height: 25vh;
+    font-size: 100px;
 }
-  
-.animation {
-    height: 30%;
-    overflow:hidden;
-    margin-left: 1rem;
-  }
-  
-  .animation > div > div {
-    padding: 0rem 0rem;
-    height:2.81rem;
-    margin-bottom: 2.81rem;
-    display:inline-block;
-  }
-  
-  .animation div:first-child {
-    animation: text-animation 8s infinite;
-  }
-  
-  
-  
-  @keyframes text-animation {
-    0% {margin-top: 0;}
-    10% {margin-top: 0;}
-    20% {margin-top: -10%;}
-    30% {margin-top: -10%;}
-    40% {margin-top: -18%;}
-    60% {margin-top: -18%;}
-    70% {margin-top: -10%;}
-    80% {margin-top: -10%;}
-    90% {margin-top: 0;}
-    100% {margin-top: 0;}
-  }
-  
+
 
 .bottom-section {
     display: flex;
     align-items: center;
     position: relative;
     justify-content: center;
-    transform: translateY(300%);
+    transform: translateY(200%);
 }
 
 .content{
@@ -347,6 +311,10 @@ transform: translateY(15%) translateX(19%);
     outline: 1px solid lightgrey;
   }
 
+  .input-box label:hover {
+    cursor: pointer;
+  }
+
 .description {
     display: flex;
     flex-direction: column;
@@ -399,20 +367,9 @@ transform: translateY(15%) translateX(19%);
     align-self: left;
 }
 
-.image {
-    width: 100%;
-    height: calc(100vh - 90px); /* Adjusted height to fill remaining space */
-    position: absolute;
-    
-    overflow: hidden; /* Hide overflow if image is larger */
-    z-index: 1;
-}
 
-.image img {
-    width: 100%;
-    height: auto;
-    max-height: 100%; /* Set max height for the image */
-}
+
+
 
 /*table starts here*/
 table {
@@ -534,9 +491,7 @@ tr:hover {
 
 
 /* Box container styles */
-.parent-container {
-    position: relative;
-}
+
 /*.catch-line {
     position: absolute;
     bottom: 20px;
@@ -545,14 +500,14 @@ tr:hover {
     color: #FFF;
     font-size: 24px;
 }*/
-
+.parent-container{
+    transform: translateX(-300px) translateY(500px);
+}
 .catch-line {
-    position: absolute;
-    top: 40%;
-    left: 50;
+    width: 50%;
     color: white; /* Adjust text color as needed */
-    white-space: nowrap;
     overflow: hidden;
+    transform: translate;
 }
 
 @keyframes moveText {
